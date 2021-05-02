@@ -70,18 +70,21 @@ const menuTemplate = [
         submenu: [
             {
                 label: "Home",
+                accelerator: "Home",
                 click() {
                     mainWindow.loadURL("https://powerful-savannah-48895.herokuapp.com/");
                 }
             },
             {
                 label: "New Post",
+                accelerator: "CmdOrCtrl+N",
                 click() {
                     mainWindow.loadURL("https://powerful-savannah-48895.herokuapp.com/blogs/new");
                 }
             },
             {
                 label: "Quit",
+                accelerator: "CmdOrCtrl+W",
                 click() {
                     app.quit();
                 }
